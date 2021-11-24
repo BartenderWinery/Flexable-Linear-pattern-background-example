@@ -1,6 +1,8 @@
 # Flexable-Linear-pattern-background-example
  An example of a looping function to create a background with linear gradients and patterns
 
+![Final product screenshot](https://github.com/BartenderWinery/Flexable-Linear-pattern-background-example/blob/master/e1.JPG?raw=true)
+
 # Explanation
 Automating element creation: This example shows how looping works and how to can help you with multiple elements.
 Here, "for (let step = 0; step < 120; step++) { Code here}", we loop the code inside 120 times. This is how we can easily automate code.
