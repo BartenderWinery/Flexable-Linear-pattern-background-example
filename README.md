@@ -1,3 +1,4 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/bartenderwinery/html-linear-pattern/badge)](https://www.codefactor.io/repository/github/bartenderwinery/html-linear-pattern)
 # Flexable-Linear-pattern-background-example
  An example of a looping function to create a background with linear gradients and patterns
 
