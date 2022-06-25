@@ -1,37 +1,33 @@
 <html>
     <head>  
         <style>
-            html{background: linear-gradient(225deg,#333333,#141414); background-size: 400% 400%;
-                color: white; overflow-y: hidden; overflow-x: hidden; height: 100%; width: 100%;
+            html{background:linear-gradient(225deg,#333333,#141414);background-size:400%;color:white;overflow:hidden;height:100%;width:100%;
                 /* Animation keyframes start here, they make the linear gradient move back and forth by direction declared above */
-                -webkit-animation: background 12s infinite;
-                -moz-animation: background 12s infinite;
-                -o-animation: background 12s infinite;
-                animation: background 12s infinite;}
+                -webkit-animation:background 12s infinite;
+                -moz-animation:background 12s infinite;
+                -o-animation:background 12s infinite;
+                animation:background 12s infinite}
                 @-webkit-keyframes background {
                     0%{background-position:90% 50%}
                     50%{background-position:10% 50%}
-                    100%{background-position:90% 50%}
-                }
+                    100%{background-position:90% 50%}}
                 @-moz-keyframes background {
                     0%{background-position:90% 50%}
                     50%{background-position:10% 50%}
-                    100%{background-position:90% 50%}
-                }
+                    100%{background-position:90% 50%}}
                 @-o-keyframes background {
                     0%{background-position:90% 50%}
                     50%{background-position:10% 50%}
-                    100%{background-position:90% 50%}
-                }
+                    100%{background-position:90% 50%}}
                 @keyframes background {
                     0%{background-position:90% 50%}
                     50%{background-position:10% 50%}
-                    100%{background-position:90% 50%}; }
+                    100%{background-position:90% 50%}}
                 /* Animation keyframes end here */
-            .grid{ height: 100%; width: 100%; display: flex; flex-wrap: wrap; align-items: stretch; justify-content: space-around; align-content: space-between;;overflow:hidden}
+            .grid{height:100%;width:100%;display:flex;flex-wrap:wrap;align-items:stretch;justify-content:space-around;align-content:space-between;overflow:hidden}
             p{font-size:small;font-family:monospace}
-            .panel{ height: 115px; width: 115px; background-color: #212121; margin: 1%; transition: transform 100ms ease-in-out; border-radius: 3px; margin:5px} 
-            .panel:hover { transform: scale(1.5) }
+            .panel{height:115px;width:115px;background-color:#212121;transition:transform 100ms ease-in-out;border-radius:3px;margin:5px} 
+            .panel:hover{transform:scale(1.5)}
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>  
