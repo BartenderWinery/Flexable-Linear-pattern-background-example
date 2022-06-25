@@ -1,0 +1,60 @@
+<html>
+    <head>  
+        <style>
+            html{background: linear-gradient(225deg,#333333,#141414); background-size: 400% 400%;
+                color: white; overflow-y: hidden; overflow-x: hidden; height: 100%; width: 100%;
+                /* Animation keyframes start here, they make the linear gradient move back and forth by direction declared above */
+                -webkit-animation: background 12s infinite;
+                -moz-animation: background 12s infinite;
+                -o-animation: background 12s infinite;
+                animation: background 12s infinite;}
+                @-webkit-keyframes background {
+                    0%{background-position:90% 50%}
+                    50%{background-position:10% 50%}
+                    100%{background-position:90% 50%}
+                }
+                @-moz-keyframes background {
+                    0%{background-position:90% 50%}
+                    50%{background-position:10% 50%}
+                    100%{background-position:90% 50%}
+                }
+                @-o-keyframes background {
+                    0%{background-position:90% 50%}
+                    50%{background-position:10% 50%}
+                    100%{background-position:90% 50%}
+                }
+                @keyframes background {
+                    0%{background-position:90% 50%}
+                    50%{background-position:10% 50%}
+                    100%{background-position:90% 50%}; }
+                /* Animation keyframes end here */
+            .grid{ height: 100%; width: 100%; display: flex; flex-wrap: wrap; align-items: stretch; justify-content: space-around; align-content: space-between;;overflow:hidden}
+            p{font-size:small;font-family:monospace}
+            .panel{ height: 115px; width: 115px; background-color: #212121; margin: 1%; transition: transform 100ms ease-in-out; border-radius: 3px; margin:5px} 
+            .panel:hover { transform: scale(1.5) }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>  
+    <body>
+        <div class="grid"></div>
+        <script>
+            for (var step=0;step<120;step++){
+                switch(step){
+                    case 28:
+                        $('.grid').append("<div class='panel'><p>Hello! Thank you for trying out my tutorial. In the bottom left corner is a iframe of one of my websites contained within a panel.</p></div>")
+                        break
+                    case 29:
+                        $('.grid').append("<div class='panel'><p>There are a unlimited amount of things you can do with HTML, you can even make fully 3d scenes with it.</p></div>")
+                        break
+                    case 92:
+                        $('.grid').append("<div class='panel' style='width:243px'><iframe style='height:100%;width:100%' src='https://htmlcmd.netlify.com'></iframe></div>")
+                        break
+                    case 93:
+                        $('.grid').append("<div class='panel'><p>This is a Iframe of my windows terminal emulator, it seems a bit weird in Iframe. You can check it out fully here: https://htmlcmd.netlify.com</p></div>")
+                        break
+                    default:
+                        $('.grid').append('<div class="panel"></div>')
+                        break}}
+        </script>
+    </body>
+</html>

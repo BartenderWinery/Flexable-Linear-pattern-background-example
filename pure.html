@@ -1,6 +1,5 @@
 <html>
     <head>  
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <style>
             html{background: linear-gradient(225deg,#333333,#141414); background-size: 400% 400%;
                 color: white; overflow-y: hidden; overflow-x: hidden; height: 100%; width: 100%;
@@ -29,24 +28,33 @@
                     50%{background-position:10% 50%}
                     100%{background-position:90% 50%}; }
                 /* Animation keyframes end here */
-            .grid{ height: 100%; width: 100%; display: flex; flex-wrap: wrap; justify-content: space-evenly;}
-            .panel{ height: 115px; width: 115px; background-color: #212121; margin: 1%; transition: transform 100ms ease-in-out; border-radius: 3px;} .panel:hover { transform: scale(1.5) }
+            .grid{ height: 100%; width: 100%; display: flex; flex-wrap: wrap; align-items: stretch; justify-content: space-around; align-content: space-between;;overflow:hidden}
+            p{font-size:small;font-family:monospace}
+            .panel{ height: 115px; width: 115px; background-color: #212121; margin: 1%; transition: transform 100ms ease-in-out; border-radius: 3px; margin:5px} 
+            .panel:hover { transform: scale(1.5) }
         </style>
     </head>  
     <body>
-        <!--
-            This example is far from its full true protential
-
-            The true extent that this code can go will be coming soon,
-                -Dyanmic scaling to fit any screen size.
-                -Each panel acting as a seperate screen with its own code
-                -And much, much more.
-        -->
         <div class="grid"></div>
         <script>
-            var grid = $(".grid")
-            for (let step = 0; step < 120; step++) {
-                $('.grid').prepend('<div class="panel"></div>');}
+            function insert(e,s){document.body.children[0].insertAdjacentHTML("beforeEnd","<div class='panel' style='"+(s?s:"")+"'>"+(e?e:"")+"</div>")}
+            for (var step=0;step<120;step++){
+                switch(step){
+                    case 28:
+                        insert("<p>Hello! Thank you for trying out my tutorial. In the bottom left corner is a iframe of one of my websites contained within a panel.</p>")
+                        break
+                    case 29:
+                        insert("<p>There are a unlimited amount of things you can do with HTML, you can even make fully 3d scenes with it.</p>")
+                        break
+                    case 92:
+                        insert("<iframe style='height:100%;width:100%' src='https://htmlcmd.netlify.com'></iframe>","width:243px")
+                        break
+                    case 93:
+                        insert("<p>This is a Iframe of my windows terminal emulator, it seems a bit weird in Iframe. You can check it out fully here: https://htmlcmd.netlify.com</p>")
+                        break
+                    default:
+                        insert()
+                        break}}
         </script>
     </body>
 </html>
